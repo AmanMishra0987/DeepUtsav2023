@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeputsav Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input#urlimage{
+            width: 62%;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 7.5%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        nav,footer{
+            width: 100%;
+            margin: 10px;
+        }
+        nav{
+            font-size: 20px;
+            padding: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="firebase.js"></script>
+</head>
+<body>
+    <nav class="bg-blue-500 p-4 text-white">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">DEEPUTSAV 2023</h1>
+        </div>
+    </nav>
+
+    <div class="container mt-8">
+        <img style="width: 60%;" src="https://deeputsav.rmlauexams.in/img/Done2BANNER.jpg" alt="deeputsav">
+        <h1 class="text-2xl font-semibold">DEEPUTSAV ENTRY FORM</h1>
+        <input type="hidden" id="hdnMode" class="hidden">
+        <input type="hidden" id="hdnID" class="hidden">
+        <input type="text" id="txtname" placeholder="Name" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="txtmob" placeholder="Mobile Number" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="txtemail" placeholder="Email" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="txtunit" placeholder="Institution/Organization" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="txtunitHindi" placeholder="Institution/Organization in Hindi" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="urlimage" placeholder="Enter Image URL" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <button id="btnSave" class="bg-blue-500 text-white py-2 px-4 rounded-md">Save</button>
+
+        <table id="Admindata" class="w-full border-collapse border border-gray-300">
+            <!-- Table data will be dynamically generated here -->
+        </table>
+    </div>
+
+    <footer class="bg-blue-500 p-4 text-white mt-8">
+        <div class="container mx-auto">
+            &copy; 2023 Deeputsav. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
