@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deeputsav Form</title>
+    <title>Deeputsav Entry Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,11 +53,11 @@
         th {
             background-color: #f0f0f0;
         }
-        nav,footer{
+        nav, footer {
             width: 100%;
             margin: 10px;
         }
-        nav{
+        nav {
             font-size: 20px;
             padding: none;
         }
@@ -66,22 +66,15 @@
     <script type="module" src="firebase.js"></script>
 </head>
 <body>
-    <nav class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto">
-            <h1 class="text-2xl font-bold">DEEPUTSAV 2023</h1>
-        </div>
-    </nav>
 
-    <div class="container mt-8">
+    <div style="position: absolute;top: 0;" class="container mt-8">
         <img style="width: 60%;" src="https://deeputsav.rmlauexams.in/img/Done2BANNER.jpg" alt="deeputsav">
         <h1 class="text-2xl font-semibold">DEEPUTSAV ENTRY FORM</h1>
         <input type="hidden" id="hdnMode" class="hidden">
         <input type="hidden" id="hdnID" class="hidden">
         <input type="text" id="txtname" placeholder="Name" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
-        <input type="text" id="txtmob" placeholder="Mobile Number" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
-        <input type="text" id="txtemail" placeholder="Email" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
-        <input type="text" id="txtunit" placeholder="Institution/Organization" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
-        <input type="text" id="txtunitHindi" placeholder="Institution/Organization in Hindi" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="txtmob" placeholder="Phone Number" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
+        <input type="text" id="txtserial" placeholder="Serial Number" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
         <input type="text" id="urlimage" placeholder="Enter Image URL" class="w-full py-2 px-3 rounded-md border border-gray-300 mb-4">
         <button id="btnSave" class="bg-blue-500 text-white py-2 px-4 rounded-md">Save</button>
 
@@ -90,7 +83,7 @@
         </table>
     </div>
 
-    <footer class="bg-blue-500 p-4 text-white mt-8">
+    <footer style="position:absolute;bottom: 0;" class="bg-blue-500 p-4 text-white mt-8">
         <div class="container mx-auto">
             &copy; 2023 Deeputsav. All rights reserved.
         </div>
