@@ -90,5 +90,6 @@ const generateQRCode = (text) => {
 };
 
 // Get the window's URL and generate the QR code
-const windowURL = window.location.href;
+const windowURL = 'https://deeputsav-rmlauexams.web.app/Department/Print_Data.html?serial='+serialFromURL;
+console.log(windowURL);
 generateQRCode(windowURL);
