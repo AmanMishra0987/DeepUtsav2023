@@ -40,7 +40,7 @@ const fetchDataBySerial = (serial) => {
     });
 };
 // Function to fetch all serials
-const fetchAllSerials = () => {
+function fetchAllSerials () {
   const dataRef = ref(db, "Print_Data");
 
   get(dataRef)
@@ -62,6 +62,7 @@ const fetchAllSerials = () => {
       console.error("Error fetching data: " + error);
     });
 };
+document.getElementById("null").addEventListener("click", fetchAllSerials)
 // fetchAllSerials();
 // Function to extract serial from query parameters
 const getSerialFromQueryParams = () => {
