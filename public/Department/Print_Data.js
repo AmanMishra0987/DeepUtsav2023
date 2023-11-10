@@ -62,7 +62,7 @@ const fetchAllSerials = () => {
       console.error("Error fetching data: " + error);
     });
 };
-fetchAllSerials();
+// fetchAllSerials();
 // Function to extract serial from query parameters
 const getSerialFromQueryParams = () => {
   const queryString = window.location.search;
